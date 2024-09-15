@@ -1,58 +1,69 @@
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #282c34;
-  color: white;
-}
+  font-family: Inter, sans-serif;
+  height:100vh;
+  background-color:#282D35;
+  }
 
-.navbar {
-  background-color: #20232a;
-  padding: 1rem;
-}
-
-.navbar-content {
+nav {
+  background-color: #21222a;
+  padding: 30px 25px;
+  height: 90px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 960px;
-  margin: 0 auto;
+  align-items:center;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #61dafb;
+.nav--text, .logo--text{
+  margin:0;
 }
 
-.nav-title {
-  font-size: 1rem;
+.logo--text {
+  margin-right:auto;
+  color:#61dafb;
+  font-weight:700;
+  font-size:22px;
+  margin-right:auto;
 }
 
-.main-content {
-  max-width: 960px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+.nav--text {
+  color:#deebf8;
+  font-weight:600;
+  }
+
+.nav--logo{
+height:30px; 
+margin-right: 7px;
 }
 
-.fact-title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+main{
+  padding:57px 27px;
+  color:white;
+  background-image: url();
+  background-repeat:no-repeat;
+  background-position: right 75%;
 }
 
-.fact-list {
-  list-style-type: none;
-  padding: 0;
+.main--title{
+margin:0;
+font-size:39px;
+letter-spacing: -0.05em;/* so that the letter come a bit close together  */
 }
 
-.fact-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
+.main--facts{
+margin-top:46px;
+max-width:400px;
 }
 
-.fact-item::before {
-  content: "•";
-  color: #61dafb;
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
+.main--facts > li {
+  line-height:19px;
+  padding-block:10px;/* padding-block is a css property which only applies padding to top and bottom */
+  max-width:400px;/* to wrap the text basically what it means is to not let the text go too right */
+}
+
+.main--facts > li::marker{/*::marker is a pseudo element which basically selects all the bullet points of a ul/ol */
+font-size: 1.4rem;
+color:#61dafb;
 }
